@@ -1,0 +1,183 @@
+.hidden {
+  display: none;
+}
+.background-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* 배경 이미지 스타일 */
+.background-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* 전체 레이아웃 */
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard', 'Noto Sans KR', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+/* 중앙 컨테이너 */
+.center-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background: rgba(0,0,0,0.35);
+  padding: 40px 32px 32px 32px;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+
+/* 시계 */
+#clock {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 12px 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* 인사말 */
+#greeting {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 12px 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* 로그인 폼, 투두 폼 */
+#login-form,
+#todo-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 0;
+}
+
+#login-form input,
+#todo-form input {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255,255,255,0.85);
+  color: #222;
+  min-width: 180px;
+}
+
+#login-form button,
+#todo-form button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #5a8dee;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#login-form button:hover,
+#todo-form button:hover {
+  background: #3a6fd8;
+}
+
+/* 투두 리스트 */
+#todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 320px;
+}
+#todo-list li {
+  background: rgba(255,255,255,0.15);
+  margin-bottom: 8px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+#todo-list button {
+  background: transparent;
+  border: none;
+  color: #ffb3b3;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+/* 명언(중앙 하단) */
+#quote {
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.32);
+  padding: 18px 32px;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+  z-index: 2;
+}
+#quote span:last-child {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  font-style: italic;
+}
+
+/* 날씨(오른쪽 상단) */
+#weather {
+  position: fixed;
+  top: 32px;
+  right: 40px;
+  background: rgba(0,0,0,0.28);
+  padding: 14px 22px;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: right;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  z-index: 2;
+}
+#weather span:last-child {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+}
+
+/* 숨김 클래스 */
+.hidden {
+  display: none !important;
+}

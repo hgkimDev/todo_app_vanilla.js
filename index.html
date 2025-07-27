@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Stylish Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 중앙 컨테이너 -->
+  <div class="center-container">
+    <form id="login-form" class="hidden">
+      <input required maxlength="15" type="text" placeholder="이름을 입력하세요" />
+      <button>로그인</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <h2 id="clock">00:00:00</h2>
+    <form id="todo-form">
+      <input type="text" placeholder="할 일을 입력하세요" required />
+      <button>추가</button>
+    </form>
+    <ul id="todo-list"></ul>
+  </div>
+
+
+  <!-- 명언 (중앙 하단) -->
+  <div id="quote">
+    <span>명언이 여기에 표시됩니다.</span>
+    <span>- 작가</span>
+  </div>
+
+  <!-- 날씨 (오른쪽 상단) -->
+  <div id="weather">
+    <span>날씨 정보</span>
+    <span>도시명</span>
+  </div>
+
+  <!-- JS 파일들 -->
+  <script src="js/background.js"></script>
+  <script src="js/greetings.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+</html>
